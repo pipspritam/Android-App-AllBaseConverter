@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Base Converter</string>
+    <string name="dec_to_other">Dec To Bin/Oct/Hex</string>
+    <string name="bin_to_other">Bin To Dec/Oct/Hex</string>
+    <string name="oct_to_other">Oct To Dec/Bin/Hex</string>
+    <string name="hex_to_other">Hex To Dec/Bin/Oct</string>
+    <string name="any_to_any">Any Base To Any Base</string>
+    <string name="dec">decimal</string>
+    <string name="bin">binary</string>
+    <string name="oct">Octal</string>
+    <string name="hex">hexadecimal</string>
+    <string name="convert_button">Convert</string>
+    <string name="reset_button">RESET</string>
+    <string name="alert_title">Do you want to exit?</string>
+    <string name="alert_massage">See you soon :)</string>
+    <string name="regular_base">Regular Base Converter: </string>
+    <string name="advanced_base">Advanced Base Converter:</string>
+    <string name="code_converter">Code Converter:</string>
+    <string name="bin_to_gray">Binary To Gray</string>
+    <string name="gray_to_bin">Gray To Binary</string>
+    <string name="bin_code">Binary Code</string>
+    <string name="gray_code">Gray Code</string>
+    <string name="dot_line">...........................</string>
+    <string name="result">RESULT</string>
+    <string name="copyright">© 2020 PritamPips All Rights Reserved</string>
+    <string name="dec_input_hint">Enter Decimal Number</string>
+    <string name="any_base_input_hint">Enter Number</string>
+    <string name="bin_input_hint">Enter Binary Number</string>
+    <string name="oct_input_hint">Enter Octal Number</string>
+    <string name="hex_input_hint">Enter Hexadecimal Number</string>
+    <string name="binary_code_hint">Enter Binary Code</string>
+    <string name="gray_code_hint">Enter Gray Code</string>
+    <string name="initial_base">Initial Base: </string>
+    <string name="destination_base">Destination Base: </string>
+    <string-array name="bases">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+    </string-array>
+</resources>
