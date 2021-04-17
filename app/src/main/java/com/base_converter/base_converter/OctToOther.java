@@ -2,6 +2,7 @@ package com.base_converter.base_converter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -149,12 +150,15 @@ public class OctToOther extends AppCompatActivity implements View.OnClickListene
                     else
                     {
                         decimalOutput.setText(decimal_output);
+                        decimalOutput.setTypeface(null, Typeface.BOLD);
 
                         String binary = fromDeci(2,result_decimal);
                         binaryOutput.setText(binary);
+                        binaryOutput.setTypeface(null, Typeface.BOLD);
 
                         String hexadecimal = fromDeci(16,result_decimal);
                         hexOutput.setText(hexadecimal);
+                        hexOutput.setTypeface(null, Typeface.BOLD);
 
                     }
                 }
@@ -163,8 +167,11 @@ public class OctToOther extends AppCompatActivity implements View.OnClickListene
             {
                 editText_oct.setText(null);
                 decimalOutput.setText("...........................");
+                decimalOutput.setTypeface(null, Typeface.NORMAL);
                 binaryOutput.setText("...........................");
+                binaryOutput.setTypeface(null, Typeface.NORMAL);
                 hexOutput.setText("...........................");
+                hexOutput.setTypeface(null, Typeface.NORMAL);
             }
 
         }

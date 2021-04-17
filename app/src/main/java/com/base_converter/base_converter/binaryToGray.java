@@ -2,6 +2,7 @@ package com.base_converter.base_converter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -61,12 +62,14 @@ public class binaryToGray extends AppCompatActivity implements View.OnClickListe
                                 binary_code_string.charAt(i)));
                     }
                     gray_output.setText(gray.toString());
+                    gray_output.setTypeface(null, Typeface.BOLD);
                 }
             }
             if(v.getId()==R.id.button_reset)
             {
                 editText_binary_input.setText(null);
                 gray_output.setText("...........................");
+                gray_output.setTypeface(null, Typeface.NORMAL);
             }
         }
         catch (Exception e)

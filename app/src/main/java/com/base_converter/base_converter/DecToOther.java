@@ -2,6 +2,7 @@ package com.base_converter.base_converter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -86,12 +87,15 @@ public class DecToOther extends AppCompatActivity implements View.OnClickListene
                     {
                     String binary = fromDeci(2,decimal);
                     binaryOutput.setText(binary);
+                    binaryOutput.setTypeface(null, Typeface.BOLD);
 
                     String octal = fromDeci(8,decimal);
                     octalOutput.setText(octal);
+                    octalOutput.setTypeface(null, Typeface.BOLD);
 
                     String hexadecimal = fromDeci(16,decimal);
                     hexOutput.setText(hexadecimal);
+                    hexOutput.setTypeface(null, Typeface.BOLD);
                 }
             }
 
@@ -99,8 +103,11 @@ public class DecToOther extends AppCompatActivity implements View.OnClickListene
             {
                 editText_dec.setText(null);
                 binaryOutput.setText("...........................");
+                binaryOutput.setTypeface(null, Typeface.NORMAL);
                 octalOutput.setText("...........................");
+                octalOutput.setTypeface(null, Typeface.NORMAL);
                 hexOutput.setText("...........................");
+                hexOutput.setTypeface(null, Typeface.NORMAL);
             }
         }
         catch (Exception e) {

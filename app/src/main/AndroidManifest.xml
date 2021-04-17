@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="ExtraText">
+        tools:ignore="ExtraText"
+        android:allowBackup="false">
         <activity android:name=".grayToBinary"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity"

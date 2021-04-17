@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import hotchemi.android.rate.AppRate;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -25,8 +27,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button bin_to_gray_button = findViewById(R.id.bin_to_gray);
         Button gray_to_binary_button = findViewById(R.id.gray_to_bin);
 
-
-
         dec_to_other_button.setOnClickListener(this);
         bin_to_other_button.setOnClickListener(this);
         oct_to_other_button.setOnClickListener(this);
@@ -34,6 +34,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         any_to_any_button.setOnClickListener(this);
         bin_to_gray_button.setOnClickListener(this);
         gray_to_binary_button.setOnClickListener(this);
+
+        AppRate.with(this)
+                .setInstallDays(1)
+                .setLaunchTimes(3)
+                .setRemindInterval(2)
+                .monitor();
+        AppRate.showRateDialogIfMeetsConditions(this);
     }
 
 

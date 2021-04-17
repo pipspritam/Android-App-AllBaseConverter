@@ -112,7 +112,7 @@
             android:textColor="#000000"
             android:textAllCaps="true"
             android:text="@string/dot_line"
-            android:textStyle="bold"
+
             android:textSize="25sp"
             android:padding="5dp" />
     </LinearLayout>

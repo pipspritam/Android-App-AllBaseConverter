@@ -1,7 +1,6 @@
 package com.base_converter.base_converter;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -9,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class HexToOther extends AppCompatActivity implements View.OnClickListener {
 
@@ -215,12 +216,15 @@ public class HexToOther extends AppCompatActivity implements View.OnClickListene
                     else
                     {
                         decimalOutput.setText(decimal_output);
+                        decimalOutput.setTypeface(null, Typeface.BOLD);
 
                         String binary = fromDeci(2,result_decimal);
                         binaryOutput.setText(binary);
+                        binaryOutput.setTypeface(null, Typeface.BOLD);
 
                         String octal = fromDeci(8,result_decimal);
                         octalOutput.setText(octal);
+                        octalOutput.setTypeface(null, Typeface.BOLD);
                     }
                 }
 
@@ -229,8 +233,11 @@ public class HexToOther extends AppCompatActivity implements View.OnClickListene
             {
                 editText_hex.setText(null);
                 decimalOutput.setText("...........................");
+                decimalOutput.setTypeface(null, Typeface.NORMAL);
                 binaryOutput.setText("...........................");
+                binaryOutput.setTypeface(null, Typeface.NORMAL);
                 octalOutput.setText("...........................");
+                octalOutput.setTypeface(null, Typeface.NORMAL);
             }
 
         }

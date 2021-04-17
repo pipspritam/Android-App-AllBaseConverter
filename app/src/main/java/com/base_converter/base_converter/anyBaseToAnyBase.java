@@ -1,5 +1,6 @@
 package com.base_converter.base_converter;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -18,8 +19,6 @@ public class anyBaseToAnyBase extends AppCompatActivity implements View.OnClickL
     private Spinner initial_base_spinner, destination_base_spinner;
     private EditText number_input;
     private TextView result;
-
-
 
 
     @Override
@@ -128,40 +127,51 @@ public class anyBaseToAnyBase extends AppCompatActivity implements View.OnClickL
                     String destination_base_string = destination_base_spinner.getSelectedItem().toString();
                     int initial_base_int = Integer.parseInt(initial_base_string);
                     int destination_base_int = Integer.parseInt(destination_base_string);
-
-
-                    double result_decimal = toDeci(input_string, initial_base_int);
-                    if(result_decimal==-1)
+                    if(input_string.equals(""))
                     {
-                        Toast toast_massage_any_to_any_error = Toast.makeText(anyBaseToAnyBase.this,"Oops! Invalid Input!!",Toast.LENGTH_SHORT);
-                        toast_massage_any_to_any_error.setGravity(Gravity.BOTTOM,0,200);
-                        toast_massage_any_to_any_error.show();
-                        number_input.setText(null);
-                        result.setText("...........................");
-                    }
-                    else if(result_decimal>2147483647)
-                    {
-                        Toast toast_massage_any_to_any_error = Toast.makeText(anyBaseToAnyBase.this,"Oops! Number is too large!",Toast.LENGTH_SHORT);
-                        toast_massage_any_to_any_error.setGravity(Gravity.BOTTOM,0,200);
-                        toast_massage_any_to_any_error.show();
-                        number_input.setText(null);
-                        result.setText("...........................");
+                        Toast toast_massage_any_to_any = Toast.makeText(anyBaseToAnyBase.this,"Please Enter Input",Toast.LENGTH_SHORT);
+                        toast_massage_any_to_any.setGravity(Gravity.BOTTOM,0,200);
+                        toast_massage_any_to_any.show();
                     }
                     else
                     {
-                        if(destination_base_int==10)
+                        double result_decimal = toDeci(input_string, initial_base_int);
+                        if(result_decimal==-1)
                         {
-                            String output_final_10 = Double.toString(result_decimal);
-                            result.setText(output_final_10);
+                            Toast toast_massage_any_to_any_error = Toast.makeText(anyBaseToAnyBase.this,"Oops! Invalid Input!!",Toast.LENGTH_SHORT);
+                            toast_massage_any_to_any_error.setGravity(Gravity.BOTTOM,0,200);
+                            toast_massage_any_to_any_error.show();
+                            number_input.setText(null);
+                            result.setText("...........................");
                         }
-                        String output_final = fromDeci(destination_base_int,result_decimal);
-                        result.setText(output_final);
+                        else if(result_decimal>2147483647)
+                        {
+                            Toast toast_massage_any_to_any_error = Toast.makeText(anyBaseToAnyBase.this,"Oops! Number is too large!",Toast.LENGTH_SHORT);
+                            toast_massage_any_to_any_error.setGravity(Gravity.BOTTOM,0,200);
+                            toast_massage_any_to_any_error.show();
+                            number_input.setText(null);
+                            result.setText("...........................");
+                        }
+                        else
+                        {
+                            if(destination_base_int==10)
+                            {
+                                String output_final_10 = Double.toString(result_decimal);
+                                result.setText(output_final_10);
+                            }
+                            String output_final = fromDeci(destination_base_int,result_decimal);
+                            result.setText(output_final);
+                            result.setTypeface(null, Typeface.BOLD);
+                        }
                     }
+
+
                 }
             if(v.getId()==R.id.button_reset)
             {
                 number_input.setText(null);
                 result.setText("...........................");
+                result.setTypeface(null, Typeface.NORMAL);
             }
         }
         catch (Exception e5)

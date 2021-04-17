@@ -77,7 +77,8 @@
                 android:textAllCaps="false"
                 android:textColor="#0D0555"
                 android:textSize="25sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -109,7 +110,6 @@
             android:textColor="#000000"
             android:textAllCaps="true"
             android:text="@string/dot_line"
-            android:textStyle="bold"
             android:textSize="25sp"
             android:padding="5dp" />
     </LinearLayout>
