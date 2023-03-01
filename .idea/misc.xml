@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/prita/AndroidStudioProjects/AllBaseConverter/app/src/main/res/font/abril_fatface.xml" value="0.17993311036789297" />
+        <entry key="..\:/Users/prita/AndroidStudioProjects/AllBaseConverter/app/src/main/res/layout/activity_any_base_to_any_base.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/prita/AndroidStudioProjects/AllBaseConverter/app/src/main/res/layout/activity_bin_to_other.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/prita/AndroidStudioProjects/AllBaseConverter/app/src/main/res/layout/activity_binary_to_gray.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/prita/AndroidStudioProjects/AllBaseConverter/app/src/main/res/layout/activity_dec_to_other.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/prita/AndroidStudioProjects/AllBaseConverter/app/src/main/res/layout/activity_gray_to_binary.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/prita/AndroidStudioProjects/AllBaseConverter/app/src/main/res/layout/activity_hex_to_other.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/prita/AndroidStudioProjects/AllBaseConverter/app/src/main/res/layout/activity_main.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/prita/AndroidStudioProjects/AllBaseConverter/app/src/main/res/layout/activity_oct_to_other.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/prita/AndroidStudioProjects/AllBaseConverter/app/src/main/res/layout/base_options.xml" value="0.16216216216216217" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

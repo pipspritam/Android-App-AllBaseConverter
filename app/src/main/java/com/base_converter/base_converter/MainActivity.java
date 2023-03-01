@@ -1,14 +1,13 @@
 package com.base_converter.base_converter;
 
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import hotchemi.android.rate.AppRate;
 
@@ -96,19 +95,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         alertDialogbuilder.setMessage(R.string.alert_massage);
         alertDialogbuilder.setCancelable(false);
 
-        alertDialogbuilder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                finish();
-            }
-        });
+        alertDialogbuilder.setPositiveButton("Yes", (dialog, which) -> finish());
 
-        alertDialogbuilder.setNegativeButton("No", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.cancel();
-            }
-        });
+        alertDialogbuilder.setNegativeButton("No", (dialog, which) -> dialog.cancel());
 
         AlertDialog alertDialog = alertDialogbuilder.create();
         alertDialog.show();

@@ -22,7 +22,7 @@
     <string name="gray_code">Gray Code</string>
     <string name="dot_line">...........................</string>
     <string name="result">RESULT</string>
-    <string name="copyright">© 2020 21 PritamPips All Rights Reserved</string>
+    <string name="copyright">© 2020 23 PritamPips All Rights Reserved</string>
     <string name="dec_input_hint">Enter Decimal Number</string>
     <string name="any_base_input_hint">Enter Number</string>
     <string name="bin_input_hint">Enter Binary Number</string>
